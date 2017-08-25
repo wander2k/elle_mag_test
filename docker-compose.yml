@@ -9,8 +9,6 @@ services:
     environment:
      - MYSQL_SERVER=mysql
     depends_on:
-      - memcached
-      - mysql
       - selenium-chrome
       - selenium-chrome-debug
     volumes:
