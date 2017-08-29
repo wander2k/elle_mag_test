@@ -6,3 +6,5 @@ cd e2ebase
 bash ./bin/start.sh
 bash ./bin/run_webapp_test.sh
 ```
+
+## vnc password:secret
