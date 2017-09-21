@@ -10,7 +10,8 @@ modules:
         - WebDriver:
             host: selenium-chrome-debug
             port: 4444
-            url: http://adguest:samplecheck@dev.elle.co.jp
+            #url: http://adguest:samplecheck@dev.elle.co.jp
+            url: 
             browser: chrome
             wait: 1
         - \Helper\Acceptance
