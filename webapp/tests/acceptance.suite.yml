@@ -8,11 +8,33 @@ actor: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            host: selenium-chrome-debug
             port: 4444
             #url: http://adguest:samplecheck@dev.elle.co.jp
             url: 
-            browser: chrome
             wait: 1
         - \Helper\Acceptance
-        
+env:
+    chrome:
+        modules:
+            config:
+                WebDriver:
+                    host: selenium-chrome-debug
+                    browser: chrome
+
+    firefox:
+        modules:
+            config:
+                WebDriver:
+                    host: selenium-firefox-debug
+                    browser: firefox
+
+    chromesp:
+        modules:
+            config:
+                WebDriver:
+                    host: selenium-chrome-debug
+                    browser: chrome
+                    window_size: false
+                    capabilities:
+                        chromeOptions:
+                        args: ["disable-gpu", "window-size=414,736"]

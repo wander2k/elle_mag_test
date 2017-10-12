@@ -29,3 +29,11 @@ services:
       - "5900"
     volumes:
       - /dev/shm:/dev/shm
+
+  selenium-firefox-debug:
+    image: selenium/standalone-firefox-debug:3.4.0
+    ports:
+      - "4444"
+      - "5900"
+    volumes:
+      - /dev/shm:/dev/shm

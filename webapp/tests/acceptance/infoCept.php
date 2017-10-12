@@ -1,5 +1,5 @@
 <?php 
-//$I = new AcceptanceTester($scenario);
+// $I = new AcceptanceTester($scenario);
 // $I->wait(5);
 // $I->wantTo('Perform actions and see result');
 // $I->amOnPage('/');
